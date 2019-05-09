@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.app.modules.dao.FileInfoDAO">
+  <resultMap id="BaseResultMap" type="com.app.modules.entity.FileInfo">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="space" jdbcType="VARCHAR" property="space" />
+    <result column="path" jdbcType="VARCHAR" property="path" />
+    <result column="createTime" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+  </resultMap>
+
+  <sql id="Base_Column_List">
+    id, `name`, `space`, path, createTime
+  </sql>
+
+  <select id="findAll" resultType="com.app.modules.entity.FileInfo">
+    select
+    id, `name`, `space`, path, createTime as createTime
+    from file_info
+  </select>
+
+</mapper>

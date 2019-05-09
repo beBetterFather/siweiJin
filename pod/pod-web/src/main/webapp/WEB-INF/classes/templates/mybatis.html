@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+        <title>fastDfs文件信息</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<div style="text-align: center;margin:0 auto;width: 1000px; ">
+        <h1>文件信息</h1>
+        <table width="100%" border="1" cellspacing="1" cellpadding="0">
+            <tr>
+                <td>名称</td>
+                <td>大小</td>
+                <td>地址</td>
+                      <td>创建时间</td>
+            </tr>
+            <tr th:each="student : ${list}">
+                <td th:text="${student.name}"></td>
+                <td th:text="${student.space}"></td>
+                <td th:text="${student.path}"></td>
+                      <td th:text="${student.createTime}"></td>
+            </tr>
+        </table>
+</div>
+</body>
+</html>
