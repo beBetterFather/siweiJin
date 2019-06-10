@@ -7,8 +7,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="pod-business" />
-        <module name="pod-web" />
         <module name="pod-common" />
+        <module name="pod-web" />
       </profile>
     </annotationProcessing>
   </component>

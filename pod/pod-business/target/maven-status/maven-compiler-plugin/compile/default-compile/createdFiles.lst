@@ -1,0 +1,9 @@
+com\app\modules\config\TransactionConfig.class
+com\app\modules\entity\FileInfo.class
+com\app\modules\dao\FileInfoDAO.class
+com\app\modules\service\intf\IntfFileInfo.class
+com\app\modules\service\FileInfoImpl.class
+com\app\modules\config\DruidConfig.class
+com\app\modules\config\MapperScanConfig.class
+META-INF\spring-configuration-metadata.json
+com\app\modules\config\ApplicationContextRegister.class

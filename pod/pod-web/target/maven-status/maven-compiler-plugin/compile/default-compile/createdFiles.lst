@@ -1,1 +1,3 @@
 com\app\modules\Application.class
+com\app\modules\entity\Student.class
+com\app\modules\web\DemoController.class
