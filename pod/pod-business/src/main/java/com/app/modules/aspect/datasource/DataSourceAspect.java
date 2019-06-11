@@ -1,4 +1,4 @@
-package com.app.modules.config;
+package com.app.modules.aspect.datasource;
 
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.Signature;
@@ -21,7 +21,7 @@ public class DataSourceAspect {
 
     private static final Logger LOG = LoggerFactory.getLogger(DataSourceAspect.class);
 
-    @Pointcut("execution(* com.app.modules.service.*(..))")
+    @Pointcut("execution(* com.app.modules.service..*.*(..))")
     public void dataSourceAop(){}
 
     /**

@@ -3,8 +3,14 @@
   "groups": [
     {
       "sourceType": "com.app.modules.config.DruidConfig",
-      "name": "spring.datasource",
-      "sourceMethod": "dataSource()",
+      "name": "master.datasource",
+      "sourceMethod": "masterDataSource()",
+      "type": "javax.sql.DataSource"
+    },
+    {
+      "sourceType": "com.app.modules.config.DruidConfig",
+      "name": "slaver.datasource",
+      "sourceMethod": "slaverDataSource()",
       "type": "javax.sql.DataSource"
     }
   ],

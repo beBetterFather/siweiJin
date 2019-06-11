@@ -26,10 +26,10 @@ public class MyBatisPlugin implements Interceptor {
         //获取参数
         Object[] objects = invocation.getArgs();
         //显示第一个参数
-        DruidPooledPreparedStatement statement = (DruidPooledPreparedStatement) objects[0];
-        LOG.info("sql is = {}", statement.getSql());
+//        DruidPooledPreparedStatement statement = (DruidPooledPreparedStatement) objects[0];
+//        LOG.info("sql is = {}", statement.getSql());
         Object object = invocation.proceed();
-        LOG.info("plugin end。");
+//        LOG.info("plugin end。");
         return object;
     }
 

@@ -1,4 +1,4 @@
-package com.app.modules.config;
+package com.app.modules.aspect.datasource;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
